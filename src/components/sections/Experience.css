@@ -1,0 +1,225 @@
+/* =========================
+   EXPERIENCE
+   ========================= */
+
+.experience {
+  padding: 140px 0;
+}
+
+.experience__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* =========================
+   INTRO
+   ========================= */
+
+.experience__intro {
+  margin-bottom: 80px;
+}
+
+.experience__intro h2 {
+  margin: 0;
+
+  color: #f5f5f5;
+
+  font-size: clamp(42px, 6vw, 72px);
+  font-weight: 600;
+
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+
+/* =========================
+   EXPERIENCE LIST
+   ========================= */
+
+.experience__list {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* =========================
+   EXPERIENCE ITEM
+   ========================= */
+
+.experience__item {
+  display: grid;
+
+  grid-template-columns: 180px minmax(0, 1fr);
+
+  gap: 60px;
+
+  padding: 48px 0;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+  transition:
+    padding-left 0.25s ease,
+    background 0.25s ease;
+}
+
+/* =========================
+   DATE
+   ========================= */
+
+.experience__date {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+
+  color: #555;
+
+  font-family: monospace;
+  font-size: 11px;
+
+  white-space: nowrap;
+}
+
+/* =========================
+   DETAILS
+   ========================= */
+
+.experience__details {
+  max-width: 720px;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+
+.experience__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+.experience__header h3 {
+  margin: 0;
+
+  color: #f5f5f5;
+
+  font-size: 24px;
+  font-weight: 600;
+
+  letter-spacing: -0.025em;
+}
+
+.experience__company {
+  margin: 6px 0 0;
+
+  color: #34d399;
+
+  font-family: monospace;
+  font-size: 12px;
+}
+
+.experience__number {
+  color: #333;
+
+  font-family: monospace;
+  font-size: 11px;
+}
+
+/* =========================
+   DESCRIPTION
+   ========================= */
+
+.experience__description {
+  max-width: 650px;
+
+  margin: 24px 0;
+
+  color: #777;
+
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* =========================
+   TECHNOLOGIES
+   ========================= */
+
+.experience__technologies {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 8px;
+}
+
+.experience__technologies span {
+  padding: 6px 9px;
+
+  color: #666;
+
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 3px;
+
+  font-family: monospace;
+  font-size: 10px;
+
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.experience__technologies span:hover {
+  color: #aaa;
+
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+/* =========================
+   HOVER
+   ========================= */
+
+.experience__item:hover {
+  padding-left: 8px;
+}
+
+.experience__item:hover .experience__date {
+  color: #777;
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+  .experience {
+    padding: 100px 0;
+  }
+
+  .experience__container {
+    padding: 0 20px;
+  }
+
+  .experience__intro {
+    margin-bottom: 48px;
+  }
+
+  .experience__item {
+    display: block;
+
+    padding: 36px 0;
+  }
+
+  .experience__date {
+    margin-bottom: 20px;
+  }
+
+  .experience__header h3 {
+    font-size: 21px;
+  }
+
+  .experience__description {
+    font-size: 14px;
+  }
+
+  .experience__item:hover {
+    padding-left: 0;
+  }
+}

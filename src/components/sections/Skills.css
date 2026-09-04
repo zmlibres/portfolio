@@ -1,0 +1,112 @@
+/* ================================
+   Skills
+================================ */
+
+.skills-section {
+  padding: 120px 0;
+}
+
+.skills-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 40px;
+  margin-bottom: 64px;
+}
+
+.skills-header h2 {
+  margin: 0;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.skills-header p {
+  max-width: 360px;
+  margin: 0;
+  color: #888;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.skill-group {
+  min-height: 320px;
+  padding: 32px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background 0.25s ease;
+}
+
+.skill-group:hover {
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.skill-group-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.skill-group-label {
+  color: #34d399;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+}
+
+.skill-group-count {
+  color: #555;
+  font-family: monospace;
+  font-size: 0.75rem;
+}
+
+.skill-group-description {
+  max-width: 320px;
+  margin: 0 0 28px;
+  color: #777;
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+  color: #d4d4d4;
+  font-size: 0.82rem;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.skill-item:hover {
+  border-color: rgba(52, 211, 153, 0.35);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.skill-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #34d399;
+}

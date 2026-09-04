@@ -1,0 +1,228 @@
+/* =========================
+   SECTION HEADING
+   ========================= */
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  margin-bottom: 64px;
+}
+
+.section-heading__number {
+  color: #34d399;
+
+  font-family: monospace;
+  font-size: 12px;
+}
+
+.section-heading__label {
+  color: #666;
+
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+}
+
+/* =========================
+   ABOUT
+   ========================= */
+
+.about {
+  padding: 140px 0;
+}
+
+.about__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* =========================
+   CONTENT
+   ========================= */
+
+.about__content {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.4fr)
+    minmax(320px, 0.8fr);
+
+  gap: 100px;
+
+  align-items: center;
+}
+
+/* =========================
+   TEXT
+   ========================= */
+
+.about__text h2 {
+  margin: 0 0 32px;
+
+  color: #f5f5f5;
+
+  font-size: clamp(36px, 5vw, 64px);
+  font-weight: 600;
+
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+}
+
+.about__text p {
+  max-width: 650px;
+
+  margin: 0 0 20px;
+
+  color: #888;
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.about__text p:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================
+   ENGINEERING CARD
+   ========================= */
+
+.about__card {
+  position: relative;
+
+  min-height: 360px;
+
+  padding: 28px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: #101010;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+
+  overflow: hidden;
+}
+
+/* subtle grid */
+
+.about__card::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+
+  background-size: 32px 32px;
+
+  pointer-events: none;
+}
+
+/* =========================
+   CARD HEADER
+   ========================= */
+
+.about__card-header {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+
+  color: #555;
+
+  font-family: monospace;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+}
+
+/* =========================
+   CARD TITLE
+   ========================= */
+
+.about__card-title {
+  position: relative;
+
+  color: #f5f5f5;
+
+  font-size: 42px;
+  font-weight: 700;
+
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+}
+
+/* =========================
+   TECHNOLOGIES
+   ========================= */
+
+.about__technologies {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 8px;
+}
+
+.about__technologies span {
+  padding: 7px 10px;
+
+  color: #777;
+
+  background: rgba(255, 255, 255, 0.03);
+
+  border: 1px solid rgba(255, 255, 255, 0.06);
+
+  border-radius: 3px;
+
+  font-family: monospace;
+  font-size: 11px;
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+  .about {
+    padding: 100px 0;
+  }
+
+  .about__container {
+    padding: 0 20px;
+  }
+
+  .section-heading {
+    margin-bottom: 40px;
+  }
+
+  .about__content {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .about__text h2 {
+    margin-bottom: 24px;
+  }
+
+  .about__text p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .about__card {
+    min-height: 300px;
+  }
+
+  .about__card-title {
+    font-size: 36px;
+  }
+}
